@@ -88,7 +88,7 @@ def receive_data():
 
 
 def send_data():
-    global up_status, down_status, left_status, right_status
+    global up_status, down_status, left_status, right_status  # seperating
     global speed_percentage
     while True:
         s.sendall(f"{up_status},{down_status},{left_status},{right_status},{str(speed_percentage)}".encode())
