@@ -21,7 +21,7 @@ def handle_exit():
 
 atexit.register(handle_exit)
 host = "10.0.0.60"
-port = 12348
+port = 12352
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host, port))
 print("connected")
@@ -63,7 +63,6 @@ up_status = "0"
 right_status = "0"
 left_status = "0"
 down_status = "0"
-
 
 def receive_data():
     global left_ir_input, left_middle_ir_input, right_middle_ir_input, right_ir_input
